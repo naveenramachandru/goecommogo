@@ -39,10 +39,10 @@ func GetProfile() gin.HandlerFunc {
 			return
 		}
 
-		err := UserCollection.FindOne(ctx, bson.M{"email": email}).Decode(&user)
+		err1 := UserCollection.FindOne(ctx, bson.M{"email": email}).Decode(&user)
 
-		if err != nil {
-			log.Println(err)
+		if err1 != nil {
+			log.Println(err1)
 
 			c.JSON(http.StatusBadRequest, gin.H{"success": false, "message": "user not found", "data": emptyarr})
 			return
