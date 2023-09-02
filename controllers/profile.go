@@ -52,3 +52,6 @@ func GetProfile() gin.HandlerFunc {
 		c.JSON(http.StatusOK, gin.H{"success": true, "message": "user found", "data": user})
 	}
 }
+
+// QEJM2c9l5RNOxdEh
+// 122.172.87.33/32

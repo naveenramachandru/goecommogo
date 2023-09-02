@@ -10,9 +10,11 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
+// QEJM2c9l5RNOxdEh
+
 func DBSet() *mongo.Client {
 
-	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://127.0.0.1:27017"))
+	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb+srv://naveenramachandru77:QEJM2c9l5RNOxdEh@cluster0.7wun6.mongodb.net/"))
 
 	if err != nil {
 		log.Fatal(err)
