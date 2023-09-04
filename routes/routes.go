@@ -1,9 +1,8 @@
 package routes
 
 import (
-	"go_ecom_mongo/controllers"
-
 	"github.com/gin-gonic/gin"
+	"github.com/naveenramachandru/goecommogo/controllers"
 )
 
 func UserRoutes(incomingRoutes *gin.Engine) {

@@ -2,9 +2,10 @@ package controllers
 
 import (
 	"context"
-	"go_ecom_mongo/models"
 	"log"
 	"time"
+
+	"github.com/naveenramachandru/goecommogo/models"
 
 	"github.com/gin-gonic/gin"
 	"go.mongodb.org/mongo-driver/bson"

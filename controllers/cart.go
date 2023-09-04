@@ -2,11 +2,14 @@ package controllers
 
 import (
 	"context"
-	"go_ecom_mongo/db"
-	"go_ecom_mongo/models"
+
 	"log"
 	"net/http"
 	"time"
+
+	"github.com/naveenramachandru/goecommogo/models"
+
+	"github.com/naveenramachandru/goecommogo/db"
 
 	"github.com/gin-gonic/gin"
 	"go.mongodb.org/mongo-driver/bson"

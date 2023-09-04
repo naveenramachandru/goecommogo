@@ -3,12 +3,13 @@ package controllers
 import (
 	"context"
 
-	"go_ecom_mongo/db"
-	"go_ecom_mongo/models"
-	generate "go_ecom_mongo/utils"
 	"log"
 	"net/http"
 	"time"
+
+	"github.com/naveenramachandru/goecommogo/db"
+	"github.com/naveenramachandru/goecommogo/models"
+	generate "github.com/naveenramachandru/goecommogo/utils"
 
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"

@@ -4,12 +4,13 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"go_ecom_mongo/db"
-	"go_ecom_mongo/models"
 	"io"
 	"log"
 	"net/http"
 	"time"
+
+	"github.com/naveenramachandru/goecommogo/db"
+	"github.com/naveenramachandru/goecommogo/models"
 
 	"github.com/gin-gonic/gin"
 	"go.mongodb.org/mongo-driver/bson"

@@ -2,12 +2,14 @@ package middleware
 
 import (
 	"fmt"
-	"go_ecom_mongo/controllers"
-	generate "go_ecom_mongo/utils"
+	// "go_ecom_mongo/controllers"
 	"log"
 	"net/http"
 
+	generate "github.com/naveenramachandru/goecommogo/utils"
+
 	"github.com/gin-gonic/gin"
+	"github.com/naveenramachandru/goecommogo/controllers"
 	"go.mongodb.org/mongo-driver/bson"
 )
 

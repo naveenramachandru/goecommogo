@@ -2,15 +2,16 @@ package controllers
 
 import (
 	"context"
-	"go_ecom_mongo/db"
-	"go_ecom_mongo/models"
 	"log"
 	"net/http"
 	"time"
 
-	"go_ecom_mongo/controllers/data"
+	"github.com/naveenramachandru/goecommogo/models"
+
+	"github.com/naveenramachandru/goecommogo/db"
 
 	"github.com/gin-gonic/gin"
+	"github.com/naveenramachandru/goecommogo/controllers/data"
 	razorpay "github.com/razorpay/razorpay-go"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"

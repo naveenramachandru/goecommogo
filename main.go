@@ -1,14 +1,14 @@
 package main
 
 import (
-	"go_ecom_mongo/controllers"
-	"go_ecom_mongo/db"
-	"go_ecom_mongo/middleware"
-	"go_ecom_mongo/routes"
 	"log"
 	"os"
 
 	"github.com/gin-gonic/gin"
+	"github.com/naveenramachandru/goecommogo/controllers"
+	"github.com/naveenramachandru/goecommogo/db"
+	"github.com/naveenramachandru/goecommogo/middleware"
+	"github.com/naveenramachandru/goecommogo/routes"
 )
 
 func main() {
