@@ -1,11 +1,20 @@
-From golang:1.2.0
+# Use the official Golang image as a base image
+FROM golang:1.2.0
 
+# Set the working directory inside the container
 WORKDIR /app
 
+# Copy the Go module files to the container
+COPY go.mod go.sum ./
 
-COPY go.mod .
-COPY main.go .
+# Download and install Go module dependencies
+RUN go mod download
 
-Run go build -o bin .
+# Copy your application source code to the container
+COPY main.go ./
 
-ENTRYPOINT ["/app/bin"]
+# Build your Go application
+RUN go build -o bin .
+
+# Set the entry point for your application
+CMD ["./bin"]
