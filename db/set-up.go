@@ -11,6 +11,8 @@ import (
 )
 
 // QEJM2c9l5RNOxdEh
+// 122.172.87.33/32
+// mongodb+srv://naveenramachandru77:QEJM2c9l5RNOxdEh@cluster0.7wun6.mongodb.net/
 
 func DBSet() *mongo.Client {
 
