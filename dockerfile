@@ -8,7 +8,7 @@ WORKDIR /app
 COPY go.mod go.sum ./
 
 # Download and install Go module dependencies
-RUN go mod download
+RUN go mod .
 
 # Copy your application source code to the container
 COPY main.go ./
